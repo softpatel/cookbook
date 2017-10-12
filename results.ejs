@@ -1,0 +1,37 @@
+<% include partials/header %>
+<div class="container">
+    <div class="jumbotron">
+        <h1>Results for '<%= data.criteria.q %>'</h1>
+        <a href="/" class="btn btn-primary">Search Again!</a>
+    </div>
+</div>
+        
+    <!--Print message if no results are found-->
+    <% if(data["matches"].length == 0) { %>
+        <h3>No results found</h3>
+    <% } %>
+
+<div class="container">    
+    <div class="row text-center" style="display:flex; flex-wrap: wrap;">
+        <% data["matches"].forEach(function(recipe){ %>
+            <div class="col-md-3 col-sm-6">
+                <div class="thumbnail">
+                   <img src="<%= recipe.imageUrlsBySize["90"] %>">
+                   <div class="caption">
+                       <h4><%= recipe.recipeName %></h4>
+                   </div>
+                   <p>
+                        <a href="/show/<%= recipe.id %>" 
+                           class="btn btn-primary">
+                           More Info</a>
+                   </p>
+                </div>
+            </div>
+        <% }); %>
+    </div>
+    
+    <h4><%= data["attribution"]["text"] %></h4>
+    <a href="<% data["attribution"]["url"] %>">Yummly</a>
+</div>
+
+<% include partials/footer %>

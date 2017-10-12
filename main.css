@@ -1,0 +1,66 @@
+h1 {
+    text-align: center;
+}
+
+.jumbotron {
+    padding: 10px;    
+}
+
+.jumbotron a {
+    margin-left: 40%;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.center {
+    display: block;
+    margin: 0 auto; 
+}
+
+.textCenter {
+    text-align: center;
+}
+
+.optionalForms {
+    width: 40%;
+}
+
+.allergy {
+    margin-left: 35%;
+    margin-bottom: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.bottomSpace {
+    margin-bottom: 15px;
+}
+
+#titleTalk {
+    font-family: 'Catamaran', sans-serif;
+    margin-bottom: 5px;
+}
+
+#titleForm {
+    width: 50%;
+}
+
+#titleName {
+    font-family: 'Comfortaa', cursive;
+    padding-bottom: 10px;
+}
+
+#searchBtn {
+    margin-top: 10px;
+}
+
+#recipeName {
+    font-family: 'Dosis', sans-serif;
+    padding: 15px;
+}

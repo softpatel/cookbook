@@ -1,0 +1,30 @@
+<% include partials/header %>
+    <div class="jumbotron">
+        <h1 id="titleName">Online Cookbook!</h1>
+        <p class="textCenter" id="titleTalk">Don't know what to eat? We got this.<br>Search for recipes below.</p>
+    </div>
+    <div>
+        <form action="/results" method="GET" class="center">
+            <h4 class="textCenter">Search Recipes</h4>
+            <input type="text" placeholder="Title" name="title" id="titleForm" class="center"><br>
+            <h4 class="textCenter">Wanted Ingredient: (Optional)</h4>
+            <input type="text" placeholder="Allowed Ingredients" name="allowed" class="center optionalForms"><br>
+            <h4 class="textCenter">Unwanted Ingredient: (Optional)</h4>
+            <input type="text" placeholder="Excluded Ingredients" name="excluded" class="center optionalForms"><br>
+            <!--<div class="allergy">-->
+            <!--    <h4>Allegies: (Optional)</h4>-->
+            <!--    <label class="checkbox-inline"><input type="checkbox" name="allergy" value="Dairy">Dairy</label>-->
+            <!--    <label class="checkbox-inline"><input type="checkbox" name="allergy" value="Egg">Egg</label>-->
+            <!--    <label class="checkbox-inline"><input type="checkbox" value="Gluten">Gluten</label>-->
+            <!--    <label class="checkbox-inline"><input type="checkbox" value="Peanut">Peanut</label>-->
+            <!--    <label class="checkbox-inline"><input type="checkbox" value="Seafood">Seafood</label><br>-->
+            <!--    <label class="checkbox-inline"><input type="checkbox" value="Sesame">Sesame</label>-->
+            <!--    <label class="checkbox-inline"><input type="checkbox" value="Soy">Soy</label>-->
+            <!--    <label class="checkbox-inline"><input type="checkbox" value="Sulfite">Sulfite</label>-->
+            <!--    <label class="checkbox-inline"><input type="checkbox" value="Tree Nut">Tree Nut</label>-->
+            <!--    <label class="checkbox-inline"><input type="checkbox" value="Wheat">Wheat</label>-->
+            <!--</div>-->
+            <button class="btn btn-primary center" id="searchBtn" type="submit">Search for Recipes</button>
+        </form>
+    </div>
+<% include partials/footer %>

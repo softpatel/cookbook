@@ -1,0 +1,17 @@
+<% include partials/header %>
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="display-3"><%= data.name %></h1>
+        <img src="<%= data.images[0].hostedLargeUrl %>" class="center bottomSpace img-thumbnail">
+    </div>
+ 
+    <h3>Ingredients Needed</h3>
+    <ul class="list-group">
+        <% data["ingredientLines"].forEach(function(ingredient){ %>
+            <li class="list-group-item"><%= ingredient %></li>
+        <% }); %>
+    </ul>
+    <p>Estimated Time to Make: <%= data.totalTime %></p>
+    <a href="<%= data.source.sourceRecipeUrl %>" class="btn btn-primary center bottomSpace">Get Recipe Instructions</a>
+</div>
+<% include partials/footer %>
